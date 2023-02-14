@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(192, 192, 192);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            display: flex;
+            width: 65vw;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .top-section-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-section-text>p {
+            margin-top: .3rem;
+        }
+
+        .top-section-image {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .education-section {
+            margin-top: 3rem;
+        }
+
+        .workex-section {
+            margin-top: 1rem;
+        }
+        .project-section {
+            margin-top: 1rem;
+        }
+        .skill-section {
+            margin-top: 1rem;
+        }
+        .achievement-section {
+            margin-top: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top-section">
+            <div class="top-section-text">
+                <h1>Navneet Kumar Singh</h1>
+                <p>Address: Green Fields, Vaddeswaram, Andhra Pradesh 522302</p>
+                <p>Phone: 086453 50200</p>
+                <p>Email: navneetsingh969@gmail.com</p>
+                <p>LinkedIn: <a href="https://www.linkedIn.com/in/navneet7716" target="_blank">LinkedIn/Navneet7716</a>
+                </p>
+                <p>Github: <a href="https://www.github.com/navneet7716" target="_blank">Github/Navneet7716</a></p>
+            </div>
+            <div class="top-section-image">
+                <img src="/images/resume-image.jpg" alt="profile photo">
+            </div>
+        </div>
+
+        <div class="education-section">
+            <h2 style="font-style: normal; font-weight: 100; color: rgb(90, 90, 90);">EDUCATION</h2>
+            <hr>
+            <div style="display:flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <h3 style="margin-top: .3rem;">B.Tech Computer Science (9.03 CGPA)</h3>
+                    <p>KL University</p>
+                </div>
+                <p>Guntur, Andhra Pradesh | Jun 2019 - Present</p>
+            </div>
+        </div>
+
+
+
+        <div class="workex-section">
+            <h2 style="font-style: normal; font-weight: 100; color: rgb(90, 90, 90);">WORK EXPERIENCE</h2>
+            <hr>
+            <div style="display:flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <h3 style="margin-top: .3rem;">BEINGZERO</h3>
+                    <p>Software Development Engineer Intern</p>
+                </div>
+                <p>Remote | Sep 2022 - present</p>
+            </div>
+            <ul style="margin-left: 2rem; margin-top: .5rem;">
+                <li>Implemented caching in the newer version of mentorpick which improved performace and efficiency of
+                    the over-all system by >50%.</li>
+                <li>Desgined responsive ui for the newer verison.</li>
+                <li>
+                    Designed and implemented a dashboard using React and Googlecharts to visualize data stored in
+                    MongoDB,
+                    decreasing time by using Aggregation Pipeline to extract relevant data quicker.
+                </li>
+                <li>
+                    Ensured only authorized employees have access to the application by creating an middleware function
+                    to intercept
+                    and sign valid requests.
+
+                </li>
+            </ul>
+            <div style="display:flex; align-items: center; justify-content: space-between; margin-top: .3rem;">
+                <div>
+                    <h3 style="margin-top: .3rem;">NATIONAL E-GOVERNANCE DIVISION</h3>
+                    <p>Software Development Engineer Intern</p>
+                </div>
+                <p>Remote | Jun 2022 - Jul 2022</p>
+            </div>
+            <ul style="margin-left: 2rem; margin-top: .5rem;">
+                <li>
+                    Worked with Json Rule Engine and Json Forms.
+                </li>
+                <li>
+                    Implemented a Rule Engine API using Nest.js for checking eligibility for different government
+                    schemes.
+                </li>
+                <li>
+                    Created a UI using Next.js for displaying eligibility forms for different government schemes.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="project-section">
+            <h2 style="font-style: normal; font-weight: 100; color: rgb(90, 90, 90);">PROJECT</h2>
+            <hr>
+            <div style="display:flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <h3 style="margin-top: .3rem;">Online Code Compiler</h3>
+                   
+                </div>
+                <p>Individual | Sep 2022 - Sep 2022</p>
+            </div>
+            <p style="margin-left: 2rem; margin-top: .5rem;">
+                Created an Online Compiler for code like Jdoodle and ideone, using React.js for the frontend and Node.js with Express.js for the backend and code compilation. hosted the compiler on AWS EC2.
+            </p>
+            <div style="display:flex; align-items: center; justify-content: space-between; margin-top: .3rem;">
+                <div>
+                    <h3 style="margin-top: .3rem;">JOBBERS – JOB SEARCHING SYSTEM</h3>
+                </div>
+                <p>Team (Lead) | Jun 2022 - Jul 2022</p>
+            </div>
+            <p style="margin-left: 2rem; margin-top: .5rem;">
+                Created a Job searching, and management system based on Spring Boot and PostgreSQL with React.js as frontend. Added functionalities like creating a post, like, comment, share, apply for a job etc. Used amazon AWS S3 service for storing and uploading user data like photos and documents.
+            </p>
+            <div style="display:flex; align-items: center; justify-content: space-between; margin-top: .3rem;">
+                <div>
+                    <h3 style="margin-top: .3rem;">REAL ESTATE MANAGEMENT SYSTEM</h3>
+                </div>
+                <p>Team (Lead) | Jun 2021 - Jul 2021</p>
+            </div>
+            <p style="margin-left: 2rem; margin-top: .5rem;">
+                Created a Real-Estate Management System based on Angular, Express.js and MongoDB. Added Functionality like search, filter and users can upload property details for listing and photos on aws s3.
+            </p>
+        </div>
+
+
+        <div class="skill-section">
+            <h2 style="font-style: normal; font-weight: 100; color: rgb(90, 90, 90);">SKILLS</h2>
+            <hr>
+            <ul style="margin-left: 2rem; margin-top: .5rem;" class="skill-list">
+                <li>
+                    Languages: C++, Java
+                </li>
+                <li>
+                    Web Development: JavaScript, TypeScript, React, HTML/CSS
+                </li>
+                <li>
+                    Databases: MYSQL, MongoDB
+                </li>
+                <li>
+                    Technology: Git, GitHub, AWS EC2, S3
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="achievement-section">
+            <h2 style="font-style: normal; font-weight: 100; color: rgb(90, 90, 90);">ACHIEVEMENTS</h2>
+            <hr>
+            <ul style="margin-left: 2rem; margin-top: .5rem;" class="skill-list">
+                <li>
+                    Solved 200+ Questions on Leetcode and Geeks For Geeks.
+                </li>
+                <li>
+                    CodeChef Rating 1748.
+                </li>
+                <li>
+                    6 Stars in HackerRank problem solving.
+                </li>
+                <li>
+                    Won 3rd place in Optum Stratethon - Season 3 among 16000+ participants.
+                </li>
+                <li>
+                    Got a global rank 26 in codechef starters 6.
+                </li>
+            </ul>
+        </div>
+
+  
+
+
+
+    </div>
+
+
+</body>
+
+</html>
