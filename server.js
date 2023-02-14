@@ -22,9 +22,9 @@ app.get("/", (req, res) => {
     res.sendFile("index.html");
 })
 
-app.get("/about", (req, res) => {
-    res.sendFile("about.html");
-})
+// app.get("/about", (req, res) => {
+//     res.sendFile("about.html");
+// })
 
 
 
