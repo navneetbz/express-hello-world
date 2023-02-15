@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000
 
 const options = {
-    extensions: ['htm', 'html','css','js','ico','jpg','jpeg','png','svg'],
+    extensions: ['css','js','ico','jpg','jpeg','png','svg'],
     index: ['index.html'],  
 }
 
