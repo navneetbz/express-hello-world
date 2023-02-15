@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 const options = {
     extensions: ['htm', 'html','css','js','ico','jpg','jpeg','png','svg'],
@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
 app.use(express.static("public", options));
 
 app.get("/", (req, res) => {
-    res.sendFile("index.html");
+    res.sendFile(__dirname + "/index.html");
 })
 
 // app.get("/about", (req, res) => {
