@@ -15,6 +15,18 @@
         .weatherCard {
             display: none;
         }
+
+        #inputBox {
+              
+               max-width: 40vw;
+           }
+
+        @media (max-width: 700px) {
+           #inputBox {
+               width: 90vw;
+               max-width: 90vw;
+           }
+        }
     </style>
 
 </head>
@@ -36,7 +48,7 @@
         <h1 class="text-center text-underline" style="text-decoration: underline;">What's the weather?</h1>
 
         <!-- * THIS IS MY INPUT DIV -->
-        <div class="input-group mb-3 mt-5" style="max-width: 40vw;">
+        <div id="inputBox" class="input-group mb-3 mt-5">
             <!-- * THIS IS MY INPUT -->
             <input id="searchBox" type="text" class="form-control form-control-lg" placeholder="Type a city name">
             <!-- * THIS IS MY SEARCH BUTTON -->
