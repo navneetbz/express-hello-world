@@ -22,6 +22,26 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 })
 
+app.get("/about", (req, res) => {
+    res.sendFile(__dirname + "/public/about.html");
+})
+
+app.get("/todo-list", (req, res) => {
+    res.sendFile(__dirname + "/public/todo-list.html")
+})
+
+app.get("/card", (req, res) => {
+    res.sendFile(__dirname + "/public/card.html")
+})
+
+// app.get("/weather", (req, res) => {
+//     res.sendFile(__dirname + "/public/weather.html")
+// })
+
+app.get("/weather", (req, res) => {
+    res.sendFile(__dirname + "/public/weatherTwo.html")
+})
+
 // app.get("/about", (req, res) => {
 //     res.sendFile("about.html");
 // })
