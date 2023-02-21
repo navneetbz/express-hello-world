@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 const options = {
     extensions: ['css','js','ico','jpg','jpeg','png','svg'],
@@ -34,17 +34,9 @@ app.get("/card", (req, res) => {
     res.sendFile(__dirname + "/public/card.html")
 })
 
-// app.get("/weather", (req, res) => {
-//     res.sendFile(__dirname + "/public/weather.html")
-// })
-
-app.get("/weather", (req, res) => {
+app.get("/weather", function (req, res) {
     res.sendFile(__dirname + "/public/weatherTwo.html")
 })
-
-// app.get("/about", (req, res) => {
-//     res.sendFile("about.html");
-// })
 
 
 
